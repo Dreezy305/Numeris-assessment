@@ -6,7 +6,7 @@ import { IInvoice, IInvoiceActions } from "../../utils/types";
 
 const Invoice = (): JSX.Element => {
   return (
-    <Flex vertical gap={34} style={{ width: "100%" }}>
+    <Flex vertical gap={34} style={{ width: "100%" }} className="pb-8 mb-5">
       <Flex
         gap={6}
         style={{ width: "100%" }}
@@ -22,7 +22,7 @@ const Invoice = (): JSX.Element => {
             type="default"
             shape="round"
             size={"large"}
-            className="uppercase h-16 w-52 cursor-pointer bg-white border-none text-NumerisGrey font-NeueHaasDisplayMedium text-sm"
+            className="uppercase h-16 w-52 cursor-pointer bg-white border border-NumerisGreyBorder text-NumerisGrey font-NeueHaasDisplayMedium text-sm"
           >
             see what’s new
           </Button>
@@ -106,6 +106,46 @@ const Invoice = (): JSX.Element => {
               </Card>
             );
           })}
+        </div>
+
+        <div className="flex flex-row items-center space-x-4 mt-4">
+          <Card
+            title={
+              <Flex className="py-7" align="center" justify="space-between">
+                <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xl text-NumerisDark">
+                  Recent Invoices
+                </Typography.Text>
+                <Button
+                  type="default"
+                  shape="round"
+                  size={"large"}
+                  className="uppercase h-16 w-52 cursor-pointer bg-white border border-NumerisGreyBorder text-NumerisBlue font-NeueHaasDisplayMedium text-sm tracking-widest"
+                >
+                  VIEW ALL INVOICES
+                </Button>
+              </Flex>
+            }
+            className="w-3/5 invoice_activities px-3"
+          ></Card>
+
+          <Card
+            title={
+              <Flex className="py-7" align="center" justify="space-between">
+                <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xl text-NumerisDark">
+                  Recent Activities
+                </Typography.Text>
+                <Button
+                  type="default"
+                  shape="round"
+                  size={"large"}
+                  className="uppercase h-16 cursor-pointer bg-white border border-NumerisGreyBorder text-NumerisBlue font-NeueHaasDisplayMedium text-sm tracking-widest"
+                >
+                  VIEW ALL
+                </Button>
+              </Flex>
+            }
+            className="w-2/5 invoice_activities px-3"
+          ></Card>
         </div>
       </Flex>
     </Flex>

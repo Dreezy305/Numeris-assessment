@@ -50,12 +50,20 @@
 .card_radius {
   border-radius: 24px;
   border: none !important;
-  /* height: 200px !important; */
-  /* width: 246px !important; */
 }
+
 .badge_component {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+.invoice_activities {
+  border-radius: 40px;
+  border: none !important;
+}
+
+.ant-card-head {
+  border-bottom: none !important;
 }
