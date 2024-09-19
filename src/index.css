@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: NeueHaasDisplayBlack;
+    src: url("/src/assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBlack.ttf");
+  }
+  @font-face {
+    font-family: NeueHaasDisplayBold;
+    src: url("/src/assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBold.ttf");
+  }
+  @font-face {
+    font-family: NeueHaasDisplayLight;
+    src: url("/src/assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf");
+  }
+  @font-face {
+    font-family: NeueHaasDisplayMedium;
+    src: url("/src/assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf");
+  }
+  @font-face {
+    font-family: NeueHaasDisplayThin;
+    src: url("/src/assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayThin.ttf");
+  }
+  @font-face {
+    font-family: NeueHaasDisplayXThin;
+    src: url("/src/assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayXThin.ttf");
+  }
+  @font-face {
+    font-family: NeueHaasDisplayRoman;
+    src: url("/src/assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf");
+  }
+}
+
+.border_end {
+  border-inline-end: none !important;
+}
+
+.side_bar {
+  max-width: 280px !important;
+  min-width: 280px !important;
+  width: 280px !important;
+}
+
+.flex-bottom {
+  border-bottom: 1px solid #a1b8ff33 !important;
+}
+
+/* .item_style {
+  height: 52px !important;
+} */
+
+/* .item_style:active {
+  height: 68px !important;
+  border-radius: 32px !important;
+  background-color: #f8f8fb !important;
+  color: black !important;
+} */
+
+/* li.ant-menu-item.ant-menu-item-selected.item_style {
+  height: 68px !important;
+  border-radius: 32px !important;
+  background-color: #f8f8fb !important;
+  color: black !important;
+  padding: 14px 16px 14px 16px;
+} */
