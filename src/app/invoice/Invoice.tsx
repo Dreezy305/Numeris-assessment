@@ -1,5 +1,8 @@
-import {  Button, Card, Flex, Space, Typography } from "antd";
-import { OverviewIcon } from "../../components/icons/icons";
+import { Button, Card, Flex, Space, Typography } from "antd";
+import { MenuIcon } from "../../components/icons/icons";
+import { invoice_data } from "../../utils/data";
+import { splitAmount } from "../../utils/helper";
+import { IInvoice } from "../../utils/types";
 
 const Invoice = (): JSX.Element => {
   return (
@@ -35,32 +38,52 @@ const Invoice = (): JSX.Element => {
       </Flex>
 
       <div className="grid grid-cols-4 gap-x-8">
-        <Card title={null} className="card_radius">
-          <OverviewIcon />
-          <div className="">
-            <Typography.Text className="font-NeueHaasDisplayMedium font-medium text-NumerisDark text-xl">
-              total paid
-            </Typography.Text>
-            <div></div>
-          </div>
-          <p>Card content</p>
-        </Card>
-        <Card title={null} className="card_radius">
-          <OverviewIcon />
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
-        <Card title={null} className="card_radius">
-          <OverviewIcon />
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
-        <Card title={null} className="card_radius">
-          <OverviewIcon />
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
+        {invoice_data.map((i: IInvoice, index: any) => {
+          const { whole, decimal }: { whole: string; decimal: string } =
+            splitAmount(i.amount);
+
+          return (
+            <Card
+              title={null}
+              className="card_radius py-4 px-4"
+              key={i.amount + index}
+            >
+              <div className="flex flex-col space-y-4">
+                <MenuIcon />
+                <div className="flex flex-row items-center space-x-2">
+                  <Typography.Text className="font-NeueHaasDisplayLight font-normal text-NumerisGrey text-xs uppercase tracking-widest">
+                    {i?.title}
+                  </Typography.Text>
+                  <div
+                    className={`rounded-3xl w-16 h-10 flex flex-row items-center justify-center ${i.color} font-NeueHaasDisplayMedium font-medium text-NumerisDarkGrey text-sm`}
+                  >
+                    {i?.fee}
+                  </div>
+                </div>
+                <Typography.Text>
+                  <Typography.Text className="font-NeueHaasDisplayMedium font-medium text-NumerisDark text-[28px] h-9">
+                    {whole}
+                  </Typography.Text>
+                  <span className="font-NeueHaasDisplayMedium font-medium text-NumerisGrey h-4">
+                    {decimal}
+                  </span>
+                </Typography.Text>
+              </div>
+            </Card>
+          );
+        })}
       </div>
+
+      {/* INVOICE ACTIONS */}
+      <Flex vertical gap={20} style={{ width: "100%" }} className="mt-6">
+        <Typography.Text className="font-NeueHaasDisplayMedium font-medium text-NumerisDark text-xl">
+          Invoice Actions
+        </Typography.Text>
+
+        <div className="grid grid-cols-3 gap-x-8">
+          <Card title={null} className="card_radius py-4 px-3"></Card>
+        </div>
+      </Flex>
     </Flex>
   );
 };

@@ -50,6 +50,8 @@
 .card_radius {
   border-radius: 24px;
   border: none !important;
+  /* height: 200px !important; */
+  /* width: 246px !important; */
 }
 .badge_component {
   display: flex !important;
@@ -57,22 +59,3 @@
   align-items: center !important;
   justify-content: center !important;
 }
-
-/* .item_style {
-  height: 52px !important;
-} */
-
-/* .item_style:active {
-  height: 68px !important;
-  border-radius: 32px !important;
-  background-color: #f8f8fb !important;
-  color: black !important;
-} */
-
-/* li.ant-menu-item.ant-menu-item-selected.item_style {
-  height: 68px !important;
-  border-radius: 32px !important;
-  background-color: #f8f8fb !important;
-  color: black !important;
-  padding: 14px 16px 14px 16px;
-} */

@@ -14,6 +14,10 @@ export default {
         NumerisGrey: "#697598",
         NumerisDarkGrey: "#373B47",
         NumerisDark: "#1F1F23",
+        NumerisGreen: "#B6FDD3",
+        NumerisDanger: "#FFB7BD",
+        NumerisAsh: "#D9D9E0",
+        NumerisYellow: "#F8E39B",
       },
     },
     fontFamily: {
