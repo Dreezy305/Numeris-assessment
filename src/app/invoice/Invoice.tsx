@@ -1,8 +1,8 @@
 import { Button, Card, Flex, Space, Typography } from "antd";
 import { MenuIcon } from "../../components/icons/icons";
-import { invoice_data } from "../../utils/data";
+import { invoice_actions, invoice_data } from "../../utils/data";
 import { splitAmount } from "../../utils/helper";
-import { IInvoice } from "../../utils/types";
+import { IInvoice, IInvoiceActions } from "../../utils/types";
 
 const Invoice = (): JSX.Element => {
   return (
@@ -81,7 +81,31 @@ const Invoice = (): JSX.Element => {
         </Typography.Text>
 
         <div className="grid grid-cols-3 gap-x-8">
-          <Card title={null} className="card_radius py-4 px-3"></Card>
+          {invoice_actions.map((i: IInvoiceActions, index: any) => {
+            return (
+              <Card
+                title={null}
+                className={`card_radius py-4 px-3 ${i.bgColor}`}
+                key={i.title + index}
+              >
+                <Flex vertical gap={16}>
+                  {i.icon}
+                  <Flex vertical gap={6}>
+                    <Typography.Text
+                      className={`font-medium font-NeueHaasDisplayMedium ${i.titleColor} text-[22px]`}
+                    >
+                      {i.title}
+                    </Typography.Text>
+                    <Typography.Text
+                      className={`font-normal font-NeueHaasDisplayLight ${i.subTitleColor} text-sm`}
+                    >
+                      {i.subtitle}
+                    </Typography.Text>
+                  </Flex>
+                </Flex>
+              </Card>
+            );
+          })}
         </div>
       </Flex>
     </Flex>

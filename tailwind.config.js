@@ -18,6 +18,7 @@ export default {
         NumerisDanger: "#FFB7BD",
         NumerisAsh: "#D9D9E0",
         NumerisYellow: "#F8E39B",
+        NumerisLightGrey: "#F6F8FA",
       },
     },
     fontFamily: {
