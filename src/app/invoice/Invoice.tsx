@@ -1,8 +1,9 @@
-import { Button, Card, Flex, Space, Typography } from "antd";
+import {  Button, Card, Flex, Space, Typography } from "antd";
+import { OverviewIcon } from "../../components/icons/icons";
 
 const Invoice = (): JSX.Element => {
   return (
-    <Flex vertical gap={6} style={{ width: "100%" }}>
+    <Flex vertical gap={34} style={{ width: "100%" }}>
       <Flex
         gap={6}
         style={{ width: "100%" }}
@@ -33,8 +34,32 @@ const Invoice = (): JSX.Element => {
         </Space>
       </Flex>
 
-      <div className="grid grid-cols-4 gap-x-4">
-        <Card />
+      <div className="grid grid-cols-4 gap-x-8">
+        <Card title={null} className="card_radius">
+          <OverviewIcon />
+          <div className="">
+            <Typography.Text className="font-NeueHaasDisplayMedium font-medium text-NumerisDark text-xl">
+              total paid
+            </Typography.Text>
+            <div></div>
+          </div>
+          <p>Card content</p>
+        </Card>
+        <Card title={null} className="card_radius">
+          <OverviewIcon />
+          <p>Card content</p>
+          <p>Card content</p>
+        </Card>
+        <Card title={null} className="card_radius">
+          <OverviewIcon />
+          <p>Card content</p>
+          <p>Card content</p>
+        </Card>
+        <Card title={null} className="card_radius">
+          <OverviewIcon />
+          <p>Card content</p>
+          <p>Card content</p>
+        </Card>
       </div>
     </Flex>
   );

@@ -47,6 +47,17 @@
   border-bottom: 1px solid #a1b8ff33 !important;
 }
 
+.card_radius {
+  border-radius: 24px;
+  border: none !important;
+}
+.badge_component {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 /* .item_style {
   height: 52px !important;
 } */

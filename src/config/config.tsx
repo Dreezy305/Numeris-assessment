@@ -114,6 +114,8 @@ export const config: ThemeConfig = {
       fontSizeLG: 64,
       // colorTextHeading: "#808080",
       borderRadiusLG: 8,
+      borderRadiusSM: 24,
+      borderRadius: 24,
       // colorTextDescription: "#000",
     },
     Segmented: {
