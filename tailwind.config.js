@@ -13,6 +13,7 @@ export default {
         NumerisBlue: "#003EFF",
         NumerisGrey: "#697598",
         NumerisDarkGrey: "#373B47",
+        NumerisDark: "#1F1F23",
       },
     },
     fontFamily: {

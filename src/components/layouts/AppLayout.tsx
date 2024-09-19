@@ -61,7 +61,7 @@ const AppLayout: React.FC = () => {
             align="center"
             justify="space-between"
             style={{ ...headerStyle }}
-            className="pb-3 flex-bottom"
+            className="pb-5 flex-bottom"
           >
             <Typography.Text className="text-NumerisDarkGrey font-NeueHaasDisplayMedium text-2xl tracking-widest">
               INVOICE
