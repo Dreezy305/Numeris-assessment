@@ -108,10 +108,10 @@ const Invoice = (): JSX.Element => {
           })}
         </div>
 
-        <div className="flex flex-row items-center space-x-8 mt-4">
+        <div className="flex flex-row items-start space-x-8 mt-4">
           <Card
             title={
-              <Flex className="py-7" align="center" justify="space-between">
+              <Flex className="pt-7" align="center" justify="space-between">
                 <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xl text-NumerisDark">
                   Recent Invoices
                 </Typography.Text>
@@ -125,18 +125,101 @@ const Invoice = (): JSX.Element => {
                 </Button>
               </Flex>
             }
-            className="w-3/5 invoice_activities px-3"
+            className="w-3/5 invoice_activities px-3 pb-8"
           >
-            <Flex vertical gap={16}>
-              <Flex vertical gap={6}>
-                <></>
+            <Flex vertical gap={38}>
+              <Flex vertical gap={28}>
+                <Typography.Text className="uppercase font-medium font-NeueHaasDisplayMedium text-NumerisDark text-xs tracking-wider">
+                  today - 27th November, 2022
+                </Typography.Text>
+
+                <div className="ps-4 grid grid-cols-3 gap-x-4">
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Invoice -</Typography.Text>
+                    <Typography.Text>1023494 - 2304</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Due date</Typography.Text>
+                    <Typography.Text>May 19th, 2023</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text></Typography.Text>
+                  </Flex>
+                </div>
+
+                <div className="ps-4 grid grid-cols-3 gap-x-4">
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Invoice -</Typography.Text>
+                    <Typography.Text>1023494 - 2304</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Due date</Typography.Text>
+                    <Typography.Text>May 19th, 2023</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text></Typography.Text>
+                  </Flex>
+                </div>
+              </Flex>
+
+              <Flex vertical gap={28}>
+                <Typography.Text className="uppercase font-medium font-NeueHaasDisplayMedium text-NumerisDark text-xs tracking-wider">
+                  8th december, 2022
+                </Typography.Text>
+
+                <div className="ps-4 grid grid-cols-3 gap-x-4">
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Invoice -</Typography.Text>
+                    <Typography.Text>1023494 - 2304</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Due date</Typography.Text>
+                    <Typography.Text>May 19th, 2023</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text></Typography.Text>
+                  </Flex>
+                </div>
+
+                <div className="ps-4 grid grid-cols-3 gap-x-4">
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Invoice -</Typography.Text>
+                    <Typography.Text>1023494 - 2304</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Due date</Typography.Text>
+                    <Typography.Text>May 19th, 2023</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text></Typography.Text>
+                  </Flex>
+                </div>
+
+                <div className="ps-4 grid grid-cols-3 gap-x-4">
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Invoice -</Typography.Text>
+                    <Typography.Text>1023494 - 2304</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text>Due date</Typography.Text>
+                    <Typography.Text>May 19th, 2023</Typography.Text>
+                  </Flex>
+                  <Flex vertical gap={4}>
+                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text></Typography.Text>
+                  </Flex>
+                </div>
               </Flex>
             </Flex>
           </Card>
 
           <Card
             title={
-              <Flex className="py-7" align="center" justify="space-between">
+              <Flex className="pt-7" align="center" justify="space-between">
                 <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xl text-NumerisDark">
                   Recent Activities
                 </Typography.Text>
@@ -150,7 +233,7 @@ const Invoice = (): JSX.Element => {
                 </Button>
               </Flex>
             }
-            className="w-2/5 invoice_activities px-3"
+            className="w-2/5 invoice_activities px-3 pb-8"
           ></Card>
         </div>
       </Flex>
