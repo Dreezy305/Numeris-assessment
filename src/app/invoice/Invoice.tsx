@@ -108,7 +108,7 @@ const Invoice = (): JSX.Element => {
           })}
         </div>
 
-        <div className="flex flex-row items-center space-x-4 mt-4">
+        <div className="flex flex-row items-center space-x-8 mt-4">
           <Card
             title={
               <Flex className="py-7" align="center" justify="space-between">
@@ -126,7 +126,13 @@ const Invoice = (): JSX.Element => {
               </Flex>
             }
             className="w-3/5 invoice_activities px-3"
-          ></Card>
+          >
+            <Flex vertical gap={16}>
+              <Flex vertical gap={6}>
+                <></>
+              </Flex>
+            </Flex>
+          </Card>
 
           <Card
             title={
