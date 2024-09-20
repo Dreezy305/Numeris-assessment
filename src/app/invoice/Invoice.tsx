@@ -202,7 +202,7 @@ const Invoice = (): JSX.Element => {
                       1023494 - 2304
                     </Typography.Text>
                   </Flex>
-                  <Flex vertical gap={4}>
+                  <Flex vertical gap={8}>
                     <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
                       Due date
                     </Typography.Text>
@@ -211,10 +211,12 @@ const Invoice = (): JSX.Element => {
                     </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base">
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
                       $1,311,750.12
                     </Typography.Text>
-                    <Typography.Text></Typography.Text>
+                    <Typography.Text className="bg-NumerisOverDueBg border-NumerisOverDue text-NumerisOverDueText font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8  flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-6">
+                      DRAFT
+                    </Typography.Text>
                   </Flex>
                 </div>
 
