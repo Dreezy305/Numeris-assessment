@@ -67,3 +67,7 @@
 .ant-card-head {
   border-bottom: none !important;
 }
+
+.invoice_pill {
+  padding: 7.5px 12px 7.5px 12px;
+}

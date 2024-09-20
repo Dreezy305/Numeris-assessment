@@ -128,37 +128,59 @@ const Invoice = (): JSX.Element => {
             className="w-3/5 invoice_activities px-3 pb-8"
           >
             <Flex vertical gap={38}>
-              <Flex vertical gap={28}>
+              <Flex vertical gap={28} style={{ width: "100%" }}>
                 <Typography.Text className="uppercase font-medium font-NeueHaasDisplayMedium text-NumerisDark text-xs tracking-wider">
                   today - 27th November, 2022
                 </Typography.Text>
 
                 <div className="ps-4 grid grid-cols-3 gap-x-4">
-                  <Flex vertical gap={4}>
-                    <Typography.Text>Invoice -</Typography.Text>
-                    <Typography.Text>1023494 - 2304</Typography.Text>
+                  <Flex vertical gap={4} style={{ width: "80%" }}>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      Invoice -
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      1023494 - 2304
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text>Due date</Typography.Text>
-                    <Typography.Text>May 19th, 2023</Typography.Text>
+                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                      Due date
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                      May 19th, 2023
+                    </Typography.Text>
                   </Flex>
-                  <Flex vertical gap={4}>
-                    <Typography.Text> $1,311,750.12</Typography.Text>
-                    <Typography.Text></Typography.Text>
+                  <Flex vertical gap={4} justify="flex-end" className="">
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base">
+                      $1,311,750.12
+                    </Typography.Text>
+                    <Typography.Text className="bg-NumerisGreenLight border-NumerisBadgeSuccess text-NumerisTextSuccess font-NeueHaasDisplayMedium font-medium text-xs uppercase h-7 w-11 flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest">
+                      PAID
+                    </Typography.Text>
                   </Flex>
                 </div>
 
                 <div className="ps-4 grid grid-cols-3 gap-x-4">
                   <Flex vertical gap={4}>
-                    <Typography.Text>Invoice -</Typography.Text>
-                    <Typography.Text>1023494 - 2304</Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      Invoice -
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      1023494 - 2304
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text>Due date</Typography.Text>
-                    <Typography.Text>May 19th, 2023</Typography.Text>
+                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                      Due date
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                      May 19th, 2023
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base">
+                      $1,311,750.12
+                    </Typography.Text>
                     <Typography.Text></Typography.Text>
                   </Flex>
                 </div>
@@ -171,45 +193,75 @@ const Invoice = (): JSX.Element => {
 
                 <div className="ps-4 grid grid-cols-3 gap-x-4">
                   <Flex vertical gap={4}>
-                    <Typography.Text>Invoice -</Typography.Text>
-                    <Typography.Text>1023494 - 2304</Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      Invoice -
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      1023494 - 2304
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text>Due date</Typography.Text>
-                    <Typography.Text>May 19th, 2023</Typography.Text>
+                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                      Due date
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                      May 19th, 2023
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base">
+                      $1,311,750.12
+                    </Typography.Text>
                     <Typography.Text></Typography.Text>
                   </Flex>
                 </div>
 
                 <div className="ps-4 grid grid-cols-3 gap-x-4">
                   <Flex vertical gap={4}>
-                    <Typography.Text>Invoice -</Typography.Text>
-                    <Typography.Text>1023494 - 2304</Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      Invoice -
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      1023494 - 2304
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text>Due date</Typography.Text>
-                    <Typography.Text>May 19th, 2023</Typography.Text>
+                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                      Due date
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                      May 19th, 2023
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base">
+                      $1,311,750.12
+                    </Typography.Text>
                     <Typography.Text></Typography.Text>
                   </Flex>
                 </div>
 
                 <div className="ps-4 grid grid-cols-3 gap-x-4">
                   <Flex vertical gap={4}>
-                    <Typography.Text>Invoice -</Typography.Text>
-                    <Typography.Text>1023494 - 2304</Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      Invoice -
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                      1023494 - 2304
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text>Due date</Typography.Text>
-                    <Typography.Text>May 19th, 2023</Typography.Text>
+                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                      Due date
+                    </Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                      May 19th, 2023
+                    </Typography.Text>
                   </Flex>
                   <Flex vertical gap={4}>
-                    <Typography.Text> $1,311,750.12</Typography.Text>
+                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base">
+                      $1,311,750.12
+                    </Typography.Text>
                     <Typography.Text></Typography.Text>
                   </Flex>
                 </div>

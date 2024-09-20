@@ -19,7 +19,11 @@ export default {
         NumerisAsh: "#D9D9E0",
         NumerisYellow: "#F8E39B",
         NumerisLightGrey: "#F6F8FA",
+        NumerisGrey3: "#666F77",
         NumerisGreyBorder: "#E3E6EF",
+        NumerisBadgeSuccess: "#12904333",
+        NumerisTextSuccess: "#129043",
+        NumerisGreenLight: "#E6FFF0",
       },
     },
     fontFamily: {
