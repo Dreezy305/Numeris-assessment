@@ -133,7 +133,7 @@ const Invoice = (): JSX.Element => {
                   today - 27th November, 2022
                 </Typography.Text>
 
-                <Flex vertical gap={34}>
+                <Flex vertical gap={38}>
                   <div className="grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
                     <Flex vertical gap={4} style={{ width: "80%" }}>
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
@@ -195,7 +195,7 @@ const Invoice = (): JSX.Element => {
                   8th december, 2022
                 </Typography.Text>
 
-                <Flex vertical gap={34}>
+                <Flex vertical gap={38}>
                   <div className="grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
                     <Flex vertical gap={4}>
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
@@ -297,8 +297,12 @@ const Invoice = (): JSX.Element => {
                 </Button>
               </Flex>
             }
-            className="w-2/5 invoice_activities px-3 pb-8"
-          ></Card>
+            className="w-2/5 invoice_activities px-3 pb-8 self-stretch"
+          >
+            <Flex vertical gap={38}>
+              <></>
+            </Flex>
+          </Card>
         </div>
       </Flex>
     </Flex>
