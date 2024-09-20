@@ -24,6 +24,9 @@ export default {
         NumerisBadgeSuccess: "#12904333",
         NumerisTextSuccess: "#129043",
         NumerisGreenLight: "#E6FFF0",
+        NumerisOverDue: "#FF566333",
+        NumerisOverDueBg: "#FFF4F5",
+        NumerisOverDueText: "#FF5663",
       },
     },
     fontFamily: {
