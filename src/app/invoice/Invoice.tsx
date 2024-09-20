@@ -128,147 +128,155 @@ const Invoice = (): JSX.Element => {
             className="w-3/5 invoice_activities px-3 pb-8"
           >
             <Flex vertical gap={38}>
-              <Flex vertical gap={28} style={{ width: "100%" }}>
+              <Flex vertical gap={34} style={{ width: "100%" }}>
                 <Typography.Text className="uppercase font-medium font-NeueHaasDisplayMedium text-NumerisDark text-xs tracking-wider">
                   today - 27th November, 2022
                 </Typography.Text>
 
-                <div className="ps-4 grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
-                  <Flex vertical gap={4} style={{ width: "80%" }}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      Invoice -
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      1023494 - 2304
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
-                      Due date
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
-                      May 19th, 2023
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={8} justify="flex-end" className="">
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
-                      $1,311,750.12
-                    </Typography.Text>
-                    <Typography.Text className="bg-NumerisGreenLight border-NumerisBadgeSuccess text-NumerisTextSuccess font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8 flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-5">
-                      PAID
-                    </Typography.Text>
-                  </Flex>
-                </div>
+                <Flex vertical gap={34}>
+                  <div className="grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
+                    <Flex vertical gap={4} style={{ width: "80%" }}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        Invoice -
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        1023494 - 2304
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                        Due date
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                        May 19th, 2023
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={8} justify="flex-end" className="">
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
+                        $1,311,750.12
+                      </Typography.Text>
+                      <Typography.Text className="bg-NumerisGreenLight border-NumerisBadgeSuccess text-NumerisTextSuccess font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8 flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-5">
+                        PAID
+                      </Typography.Text>
+                    </Flex>
+                  </div>
 
-                <div className="ps-4 grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      Invoice -
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      1023494 - 2304
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
-                      Due date
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
-                      May 19th, 2023
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={8}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
-                      $1,311,750.12
-                    </Typography.Text>
-                    <Typography.Text className="bg-NumerisOverDueBg border-NumerisOverDue text-NumerisOverDueText font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8  flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-8">
-                      OVERDUE
-                    </Typography.Text>
-                  </Flex>
-                </div>
+                  <div className="grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        Invoice -
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        1023494 - 2304
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                        Due date
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                        May 19th, 2023
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={8}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
+                        $1,311,750.12
+                      </Typography.Text>
+                      <Typography.Text className="bg-NumerisOverDueBg border-NumerisOverDue text-NumerisOverDueText font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8  flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-8">
+                        OVERDUE
+                      </Typography.Text>
+                    </Flex>
+                  </div>
+                </Flex>
               </Flex>
 
-              <Flex vertical gap={28}>
+              <Flex vertical gap={34}>
                 <Typography.Text className="uppercase font-medium font-NeueHaasDisplayMedium text-NumerisDark text-xs tracking-wider">
                   8th december, 2022
                 </Typography.Text>
 
-                <div className="ps-4 grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      Invoice -
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      1023494 - 2304
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={8}>
-                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
-                      Due date
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
-                      May 19th, 2023
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
-                      $1,311,750.12
-                    </Typography.Text>
-                    <Typography.Text className="bg-NumerisOverDueBg border-NumerisOverDue text-NumerisOverDueText font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8  flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-6">
-                      DRAFT
-                    </Typography.Text>
-                  </Flex>
-                </div>
+                <Flex vertical gap={34}>
+                  <div className="grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        Invoice -
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        1023494 - 2304
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={8}>
+                      <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                        Due date
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                        May 19th, 2023
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
+                        $1,311,750.12
+                      </Typography.Text>
+                      <Typography.Text className="bg-NumerisLightGrey border-NumerisDarkBorder text-NumerisDarkGrey font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8  flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-6">
+                        DRAFT
+                      </Typography.Text>
+                    </Flex>
+                  </div>
 
-                <div className="ps-4 grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      Invoice -
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      1023494 - 2304
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
-                      Due date
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
-                      May 19th, 2023
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base">
-                      $1,311,750.12
-                    </Typography.Text>
-                    <Typography.Text></Typography.Text>
-                  </Flex>
-                </div>
+                  <div className="grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        Invoice -
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        1023494 - 2304
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                        Due date
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                        May 19th, 2023
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={8}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
+                        $1,311,750.12
+                      </Typography.Text>
+                      <Typography.Text className="bg-NumerisPendingBg border- NumerisPendingBorder text-NumerisPending font-NeueHaasDisplayMedium font-medium text-xs uppercase h-9 flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-8 whitespace-nowrap">
+                        PENDING PAYMENT
+                      </Typography.Text>
+                    </Flex>
+                  </div>
 
-                <div className="ps-4 grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      Invoice -
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
-                      1023494 - 2304
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
-                      Due date
-                    </Typography.Text>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
-                      May 19th, 2023
-                    </Typography.Text>
-                  </Flex>
-                  <Flex vertical gap={4}>
-                    <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base">
-                      $1,311,750.12
-                    </Typography.Text>
-                    <Typography.Text></Typography.Text>
-                  </Flex>
-                </div>
+                  <div className="grid grid-cols-3 gap-x-4 w-[85%] mr-auto ml-auto">
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        Invoice -
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-sm text-NumerisDarkGrey">
+                        1023494 - 2304
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={4}>
+                      <Typography.Text className="uppercase text-xs font-normal font-NeueHaasDisplayLight text-NumerisGrey3 tracking-widest">
+                        Due date
+                      </Typography.Text>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisGrey text-sm">
+                        May 19th, 2023
+                      </Typography.Text>
+                    </Flex>
+                    <Flex vertical gap={8}>
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end">
+                        $1,311,750.12
+                      </Typography.Text>
+                      <Typography.Text className="bg-NumerisGreenLight border-NumerisBadgeSuccess text-NumerisTextSuccess font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8 flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-end px-5">
+                        PAID
+                      </Typography.Text>
+                    </Flex>
+                  </div>
+                </Flex>
               </Flex>
             </Flex>
           </Card>

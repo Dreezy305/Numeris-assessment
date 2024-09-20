@@ -27,6 +27,10 @@ export default {
         NumerisOverDue: "#FF566333",
         NumerisOverDueBg: "#FFF4F5",
         NumerisOverDueText: "#FF5663",
+        NumerisDarkBorder: "#373B4733",
+        NumerisPending: "#D98F00",
+        NumerisPendingBg: "#FFF8EB",
+        NumerisPendingBorder: "#D98F0033",
       },
     },
     fontFamily: {
