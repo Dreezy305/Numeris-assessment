@@ -34,7 +34,7 @@ const InvoiceDetails = (): JSX.Element => {
             <div className="bg-NumerisPink px-10 py-8 invoice_activities">
               <div className="flex flex-col space-y-12">
                 <div className="flex flex-row items-start justify-between">
-                  <div className="flex flex-col space-y-2">
+                  <div className="flex flex-col space-y-4">
                     <Typography.Text className="uppercase tracking-wider text-NumerisGrey font-NeueHaasDisplayMedium font-medium text-xs">
                       sender
                     </Typography.Text>
@@ -67,7 +67,7 @@ const InvoiceDetails = (): JSX.Element => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col space-y-2">
+                  <div className="flex flex-col space-y-4">
                     <Typography.Text className="uppercase tracking-wider text-NumerisGrey font-NeueHaasDisplayMedium font-medium text-xs place-self-end">
                       Customer
                     </Typography.Text>
