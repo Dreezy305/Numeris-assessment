@@ -92,7 +92,7 @@ export const config: ThemeConfig = {
     },
     Avatar: {
       containerSize: 35,
-      containerSizeLG: 60,
+      containerSizeLG: 48,
       containerSizeSM: 24,
     },
     Select: {

@@ -1,4 +1,5 @@
-import { Button, Card, Flex, Space, Typography } from "antd";
+import { Avatar, Button, Card, Flex, Space, Typography } from "antd";
+import AvatarIcon from "../../assets/image13.png";
 import { MenuIcon } from "../../components/icons/icons";
 import { invoice_actions, invoice_data } from "../../utils/data";
 import { splitAmount } from "../../utils/helper";
@@ -300,7 +301,36 @@ const Invoice = (): JSX.Element => {
             className="w-2/5 invoice_activities px-3 pb-8 self-stretch"
           >
             <Flex vertical gap={38}>
-              <></>
+              {[1, 2, 3, 4].map((i) => {
+                return (
+                  <Flex align="start" gap={14} key={i}>
+                    <Avatar
+                      src={AvatarIcon}
+                      size={"large"}
+                      shape="circle"
+                      style={{ width: "48px", height: "48px" }}
+                    />
+                    <div className="flex flex-col space-y-4">
+                      <div className="flex flex-col">
+                        <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
+                          Invoice creation
+                        </Typography.Text>
+                        <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
+                          Yesterday, 12:05 PM
+                        </Typography.Text>
+                      </div>
+                      <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                        <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
+                          Created invoice
+                        </span>
+                        <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
+                          00239434/Olaniyi Ojo Adewale
+                        </span>
+                      </div>
+                    </div>
+                  </Flex>
+                );
+              })}
             </Flex>
           </Card>
         </div>
