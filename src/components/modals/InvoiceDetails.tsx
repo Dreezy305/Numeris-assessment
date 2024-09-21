@@ -1,4 +1,4 @@
-import { Avatar, Card, Flex, Typography } from "antd";
+import { Avatar, Card, Divider, Flex, Typography } from "antd";
 import AvatarIcon from "../../assets/image10.png";
 import { CheckIcon } from "../icons/icons";
 
@@ -30,7 +30,7 @@ const InvoiceDetails = (): JSX.Element => {
 
       <div className="flex flex-row items-start space-x-8">
         <Card className="w-[65%] px-2 py-2 border card_border" title={null}>
-          <Flex vertical gap={12}>
+          <Flex vertical gap={24}>
             <div className="bg-NumerisPink px-10 py-8 invoice_activities">
               <div className="flex flex-col space-y-12">
                 <div className="flex flex-row items-start justify-between">
@@ -124,6 +124,69 @@ const InvoiceDetails = (): JSX.Element => {
                       </Typography.Text>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <Divider orientation="left" plain orientationMargin="0">
+              <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-xl tracking-normal capitalize">
+                Items
+              </Typography.Text>
+            </Divider>
+
+            <div className="rounded-3xl border px-4 py-5 flex flex-col space-y-3">
+              <Typography.Text className="uppercase tracking-widest text-NumerisGrey font-NeueHaasDisplayMedium font-medium text-xs place-self-start">
+                Payment information
+              </Typography.Text>
+
+              <div className="grid grid-cols-4 gap-y-4">
+                <div className="flex flex-col space-y-1">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                    Account name
+                  </Typography.Text>
+                  <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
+                    1023902390
+                  </Typography.Text>
+                </div>
+                <div className="flex flex-col space-y-1">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                    account number
+                  </Typography.Text>
+                  <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
+                    1023902390
+                  </Typography.Text>
+                </div>
+                <div className="flex flex-col space-y-1">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                    Ach routing no
+                  </Typography.Text>
+                  <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
+                    May 19th, 2023
+                  </Typography.Text>
+                </div>
+                <div className="flex flex-col space-y-1">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                    Bank name
+                  </Typography.Text>
+                  <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
+                    USD ($)
+                  </Typography.Text>
+                </div>
+                <div className="flex flex-col space-y-1">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                    bank address
+                  </Typography.Text>
+                  <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
+                    1023902390
+                  </Typography.Text>
+                </div>
+                <div className="flex flex-col space-y-1">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                    Account name
+                  </Typography.Text>
+                  <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
+                    March 30th, 2023
+                  </Typography.Text>
                 </div>
               </div>
             </div>
