@@ -79,7 +79,7 @@
 }
 
 .ant-modal-body {
-  /* overflow-y: scroll !important; */
+  overflow-y: scroll !important;
   height: 700px !important;
 }
 

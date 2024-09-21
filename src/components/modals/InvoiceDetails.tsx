@@ -141,7 +141,7 @@ const InvoiceDetails = (): JSX.Element => {
 
               <div className="grid grid-cols-4 gap-y-4">
                 <div className="flex flex-col space-y-1">
-                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-widest">
                     Account name
                   </Typography.Text>
                   <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
@@ -149,7 +149,7 @@ const InvoiceDetails = (): JSX.Element => {
                   </Typography.Text>
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-widest">
                     account number
                   </Typography.Text>
                   <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
@@ -157,7 +157,7 @@ const InvoiceDetails = (): JSX.Element => {
                   </Typography.Text>
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-widest">
                     Ach routing no
                   </Typography.Text>
                   <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
@@ -165,7 +165,7 @@ const InvoiceDetails = (): JSX.Element => {
                   </Typography.Text>
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-widest">
                     Bank name
                   </Typography.Text>
                   <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
@@ -173,7 +173,7 @@ const InvoiceDetails = (): JSX.Element => {
                   </Typography.Text>
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-widest">
                     bank address
                   </Typography.Text>
                   <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
@@ -181,7 +181,7 @@ const InvoiceDetails = (): JSX.Element => {
                   </Typography.Text>
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-wider">
+                  <Typography.Text className="font-NeueHaasDisplayThin font-normal text-NumerisGrey3 text-xs uppercase tracking-widest">
                     Account name
                   </Typography.Text>
                   <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-xs text-NumerisDark tracking-wider uppercase">
