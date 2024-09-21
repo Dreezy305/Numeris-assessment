@@ -71,3 +71,18 @@
 .invoice_pill {
   padding: 7.5px 12px 7.5px 12px;
 }
+
+.ant-modal-content {
+  border-radius: 40px !important;
+  padding: 30px 40px !important;
+  overflow-y: scroll !important;
+}
+
+.ant-modal-body {
+  /* overflow-y: scroll !important; */
+  height: 700px !important;
+}
+
+.card_border {
+  border-radius: 40px !important;
+}

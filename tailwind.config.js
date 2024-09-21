@@ -31,6 +31,9 @@ export default {
         NumerisPending: "#D98F00",
         NumerisPendingBg: "#FFF8EB",
         NumerisPendingBorder: "#D98F0033",
+        NumerisPryBorder: "#003EFF33",
+        NumerisPryBg: "#F2FBFF",
+        NumerisPink: "#FCDDEC",
       },
     },
     fontFamily: {
