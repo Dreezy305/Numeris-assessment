@@ -126,7 +126,10 @@ const AppLayout: React.FC = () => {
             </Flex>
           )}
         </Header>
-        <Content style={{ margin: "24px 16px 0" }} className="md:px-3 xl:px-8">
+        <Content
+          style={{ margin: "24px 16px 0" }}
+          className="px-2 md:px-3 xl:px-8"
+        >
           <div>
             <Outlet />
           </div>
