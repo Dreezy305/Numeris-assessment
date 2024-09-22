@@ -248,18 +248,30 @@ const InvoiceDetails = (): JSX.Element => {
                 </div>
               </div>
 
-              <Flex vertical gap={8}>
-                <div className="flex flex-row items-start justify-between w-1/2 float-end place-self-end">
-                  <Typography.Text>Subtotal</Typography.Text>
-                  <Typography.Text>$6,697,200.00</Typography.Text>
+              <Flex vertical gap={14}>
+                <div className="flex flex-row items-start justify-between w-3/5 float-end place-self-end">
+                  <Typography.Text className="uppercase text-NumerisGrey2 text-sm font-NeueHaasDisplayLight font-normal tracking-wider">
+                    Subtotal
+                  </Typography.Text>
+                  <Typography.Text className="text-xl text-NumerisDark font-light font-NeueHaasDisplayLight">
+                    $6,697,200.00
+                  </Typography.Text>
                 </div>
-                <div className="flex flex-row items-start justify-between w-1/2 float-end place-self-end">
-                  <Typography.Text>Discount (2.5%)</Typography.Text>
-                  <Typography.Text>$167,430.00</Typography.Text>
+                <div className="flex flex-row items-start justify-between w-3/5 float-end place-self-end">
+                  <Typography.Text className="uppercase text-NumerisGrey2 text-sm font-NeueHaasDisplayLight font-normal tracking-wider">
+                    Discount (2.5%)
+                  </Typography.Text>
+                  <Typography.Text className="text-xl text-NumerisDark font-light font-NeueHaasDisplayLight">
+                    $167,430.00
+                  </Typography.Text>
                 </div>
-                <div className="flex flex-row items-start justify-between w-1/2 float-end place-self-end">
-                  <Typography.Text>Total amount due</Typography.Text>
-                  <Typography.Text>$6,529,770.00</Typography.Text>
+                <div className="flex flex-row items-center justify-between w-3/5 float-end place-self-end">
+                  <Typography.Text className="text-NumerisDarkGrey font-medium font-NeueHaasDisplayMedium text-lg tracking-wider uppercase">
+                    Total amount due
+                  </Typography.Text>
+                  <Typography.Text className=" text-NumerisDarkGrey font-bold font-NeueHaasDisplayBold text-2xl">
+                    $6,529,770.00
+                  </Typography.Text>
                 </div>
               </Flex>
             </Flex>
