@@ -89,9 +89,16 @@ export const ModalProvider: React.FC<ModalProviderProps> = ({ children }) => {
         width={modalWidth}
         closable={isClosable}
         bodyProps={{}}
+        styles={{ content: { position: "relative" } }}
+        cancelButtonProps={{ style: { position: "absolute" } }}
         className="px-4"
+        // closeIcon={
+        //   <div className="bg-white custom-close">
+        //     <CloseOutlined />
+        //   </div>
+        // }
       >
-        {modalContent}
+        <>{modalContent}</>
       </Modal>
     </ModalContext.Provider>
   );

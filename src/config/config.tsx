@@ -178,5 +178,10 @@ export const config: ThemeConfig = {
       itemColor: "#5D5D5D",
       itemHoverColor: "#003EFF",
     },
+    Dropdown: {
+      paddingBlock: 16,
+      borderRadiusLG: 24,
+      borderRadiusSM: 24,
+    },
   },
 };

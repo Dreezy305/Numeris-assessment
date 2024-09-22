@@ -1,4 +1,13 @@
-import { Avatar, Button, Card, Flex, Space, Typography } from "antd";
+import {
+  Avatar,
+  Button,
+  Card,
+  Dropdown,
+  Flex,
+  MenuProps,
+  Space,
+  Typography,
+} from "antd";
 import AvatarIcon from "../../assets/image13.png";
 import { MenuIcon } from "../../components/icons/icons";
 import InvoiceDetails from "../../components/modals/InvoiceDetails";
@@ -6,6 +15,25 @@ import { useModal } from "../../contexts/ModalContext";
 import { invoice_actions, invoice_data } from "../../utils/data";
 import { splitAmount } from "../../utils/helper";
 import { IInvoice, IInvoiceActions } from "../../utils/types";
+
+const items: MenuProps["items"] = [
+  {
+    key: "1",
+    label: (
+      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-widest py-8">
+        Duplicate invoice
+      </Typography.Text>
+    ),
+  },
+  {
+    key: "2",
+    label: (
+      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-widest py-8">
+        get sharable link
+      </Typography.Text>
+    ),
+  },
+];
 
 const Invoice = (): JSX.Element => {
   const { openModal } = useModal();
@@ -163,14 +191,26 @@ const Invoice = (): JSX.Element => {
                           >
                             Send invoice
                           </Button>
-                          <Button
-                            type="default"
-                            shape="round"
-                            size={"large"}
-                            className="uppercase h-16 cursor-pointer bg-white border border-NumerisGreyBorder text-NumerisGrey font-NeueHaasDisplayMedium text-sm"
+                          <Dropdown
+                            menu={{ items }}
+                            placement="bottomRight"
+                            trigger={["click", "hover"]}
+                            overlayStyle={{
+                              width: "260px",
+                              borderRadius: "24px !important",
+                              padding: 16,
+                            }}
+                            
                           >
-                            More
-                          </Button>
+                            <Button
+                              type="default"
+                              shape="round"
+                              size={"large"}
+                              className="uppercase h-16 cursor-pointer bg-white border border-NumerisGreyBorder text-NumerisGrey font-NeueHaasDisplayMedium text-sm"
+                            >
+                              More
+                            </Button>
+                          </Dropdown>
                         </Flex>
                       </Flex>,
                       1334,
