@@ -4,16 +4,18 @@ import { MenuIcon } from "../../components/icons/icons";
 import InvoiceDetails from "../../components/modals/InvoiceDetails";
 import ModalTitle from "../../components/modals/ModalTitle";
 import { useModal } from "../../contexts/ModalContext";
+import useResize from "../../hooks/resize.hooks";
 import { invoice_actions, invoice_data } from "../../utils/data";
 import { splitAmount } from "../../utils/helper";
 import { IInvoice, IInvoiceActions } from "../../utils/types";
 
 const Invoice = (): JSX.Element => {
   const { openModal } = useModal();
-
+  const { size } = useResize();
   return (
     <Flex vertical gap={34} style={{ width: "100%" }} className="pb-8 mb-5">
       <Flex
+        vertical={size[0] < 768}
         gap={6}
         style={{ width: "100%" }}
         className="mt-5"
@@ -23,7 +25,10 @@ const Invoice = (): JSX.Element => {
         <Typography.Text className="font-NeueHaasDisplayMedium font-medium text-NumerisDark text-3xl">
           Invoice
         </Typography.Text>
-        <Space direction="horizontal" size={"middle"}>
+        <Space
+          direction={size[0] < 768 ? "vertical" : "horizontal"}
+          size={"middle"}
+        >
           <Button
             type="default"
             shape="round"
@@ -43,7 +48,7 @@ const Invoice = (): JSX.Element => {
         </Space>
       </Flex>
 
-      <div className="grid grid-cols-4 gap-x-8">
+      <div className="grid grid-cols-1 gap-y-8 gap-x-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-8 xl:grid xl:grid-cols-4 xl:gap-x-8">
         {invoice_data.map((i: IInvoice, index: any) => {
           const { whole, decimal }: { whole: string; decimal: string } =
             splitAmount(i.amount);
@@ -86,7 +91,7 @@ const Invoice = (): JSX.Element => {
           Invoice Actions
         </Typography.Text>
 
-        <div className="grid grid-cols-3 gap-x-8">
+        <div className="grid grid-cols-1 gap-y-8 gap-x-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-8 xl:grid xl:grid-cols-3 xl:gap-x-8">
           {invoice_actions.map((i: IInvoiceActions, index: any) => {
             return (
               <Card
@@ -114,7 +119,7 @@ const Invoice = (): JSX.Element => {
           })}
         </div>
 
-        <div className="flex flex-row items-start space-x-8 mt-4">
+        <div className="flex flex-col space-y-5 space-x-0 lg:flex lg:flex-row lg:items-start lg:space-x-4 lg:space-y-0 xl:flex xl:flex-row xl:items-start xl:space-x-8 xl:mt-4 xl:space-y-0">
           {/* LEFT */}
           <Card
             title={
@@ -135,7 +140,7 @@ const Invoice = (): JSX.Element => {
                 </Button>
               </Flex>
             }
-            className="w-3/5 invoice_activities px-3 pb-8"
+            className="w-full xl:w-3/5 invoice_activities px-3 pb-8"
           >
             <Flex vertical gap={38}>
               <Flex vertical gap={34} style={{ width: "100%" }}>
@@ -308,7 +313,7 @@ const Invoice = (): JSX.Element => {
                 </Button>
               </Flex>
             }
-            className="w-2/5 invoice_activities px-3 pb-8 self-stretch"
+            className="w-full xl:w-2/5 invoice_activities px-3 pb-8 self-stretch"
           >
             <Flex vertical gap={38}>
               {[1, 2, 3, 4].map((i) => {

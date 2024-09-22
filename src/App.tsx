@@ -14,6 +14,10 @@ function App() {
     },
     {
       path: "/app",
+      element: <Navigate to={"/app/invoice"} />,
+    },
+    {
+      path: "/app",
       element: <AppLayout />,
       errorElement: "",
       children: [{ path: "invoice", element: <Invoice />, errorElement: "" }],
