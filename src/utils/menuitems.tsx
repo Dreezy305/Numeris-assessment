@@ -36,6 +36,7 @@ export const Items: MenuItem[] = [
     onClick: () => {},
     style: { ...itemStyle },
     className: "item_style",
+    disabled: true,
   },
   {
     key: "2",
@@ -48,6 +49,7 @@ export const Items: MenuItem[] = [
     onClick: () => {},
     style: { ...itemStyle },
     className: "item_style",
+    disabled: true,
   },
   {
     key: "3",
@@ -60,6 +62,7 @@ export const Items: MenuItem[] = [
     onClick: () => {},
     style: { ...itemStyle },
     className: "item_style",
+    disabled: true,
   },
   {
     key: "4",
@@ -84,6 +87,7 @@ export const Items: MenuItem[] = [
     onClick: () => {},
     style: { ...itemStyle },
     className: "item_style",
+    disabled: true,
   },
   {
     key: "6",
@@ -96,6 +100,7 @@ export const Items: MenuItem[] = [
     onClick: () => {},
     style: { ...itemStyle },
     className: "item_style",
+    disabled: true,
   },
   {
     key: "7",
@@ -108,6 +113,7 @@ export const Items: MenuItem[] = [
     onClick: () => {},
     style: { ...itemStyle },
     className: "item_style",
+    disabled: true,
   },
 ];
 
