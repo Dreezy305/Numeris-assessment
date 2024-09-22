@@ -1,4 +1,4 @@
-import { Avatar, Card, Divider, Flex, Typography } from "antd";
+import { Avatar, Card, Col, Divider, Flex, Row, Typography } from "antd";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -146,10 +146,10 @@ const InvoiceDetails = (): JSX.Element => {
             </Divider>
 
             {/* ITEMS RECEIPT */}
-            <Flex vertical gap={24}>
-              <div className="w-full flex flex-col space-y-8 mb-6">
-                <div className="flex flex-row justify-between items-start">
-                  <div className="flex flex-col w-2/5">
+            <Flex vertical gap={28} style={{ width: "100%" }}>
+              <Row style={{ width: "100%" }}>
+                <Col span={6}>
+                  <div className="flex flex-col">
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-NumerisDark text-base">
                       Email Marketing
                     </Typography.Text>
@@ -158,48 +158,52 @@ const InvoiceDetails = (): JSX.Element => {
                       voluptatem accusantium
                     </Typography.Text>
                   </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      10
-                    </Typography.Text>
-                  </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $1,500
-                    </Typography.Text>
-                  </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $15,000.00
-                    </Typography.Text>
-                  </div>
-                </div>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase text-right">
+                    10
+                  </Typography.Text>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                    $1,500
+                  </Typography.Text>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                    $15,000.00
+                  </Typography.Text>
+                </Col>
+              </Row>
 
-                <div className="flex flex-row justify-between items-start">
-                  <div className="flex flex-col space-y-2 w-2/5">
+              <Row style={{ width: "100%" }}>
+                <Col span={6}>
+                  <div className="flex flex-col">
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-NumerisDark text-base">
                       Video looping effect
                     </Typography.Text>
                   </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      6
-                    </Typography.Text>
-                  </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $1,110,500
-                    </Typography.Text>
-                  </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $6,663,000.00
-                    </Typography.Text>
-                  </div>
-                </div>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase text-left">
+                    6
+                  </Typography.Text>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase text-right">
+                    $1,110,500
+                  </Typography.Text>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase text-right">
+                    $1,110,500
+                  </Typography.Text>
+                </Col>
+              </Row>
 
-                <div className="flex flex-row justify-between items-start">
-                  <div className="flex flex-col w-2/5">
+              <Row style={{ width: "100%" }}>
+                <Col span={6}>
+                  <div className="flex flex-col">
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-NumerisDark text-base">
                       Graphic design for emails
                     </Typography.Text>
@@ -207,48 +211,49 @@ const InvoiceDetails = (): JSX.Element => {
                       Tsit voluptatem accusantium
                     </Typography.Text>
                   </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      7
-                    </Typography.Text>
-                  </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $2,750
-                    </Typography.Text>
-                  </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $19,250.00
-                    </Typography.Text>
-                  </div>
-                </div>
-
-                <div className="flex flex-row justify-between items-start">
-                  <div className="flex flex-col w-2/5">
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                    7
+                  </Typography.Text>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                    $2,750
+                  </Typography.Text>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                    $19,250.00
+                  </Typography.Text>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={6}>
+                  <div className="flex flex-col">
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-NumerisDark text-base">
                       Video looping effect
                     </Typography.Text>
                   </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      6
-                    </Typography.Text>
-                  </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $1,110,500
-                    </Typography.Text>
-                  </div>
-                  <div>
-                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $6,663,000.00
-                    </Typography.Text>
-                  </div>
-                </div>
-              </div>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                    6
+                  </Typography.Text>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                    $1,110,500
+                  </Typography.Text>
+                </Col>
+                <Col span={6} className="text-end">
+                  <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                    $6,663,000.00
+                  </Typography.Text>
+                </Col>
+              </Row>
 
-              <Flex vertical gap={14}>
+              <Flex vertical gap={18} className="mt-5">
                 <div className="flex flex-row items-start justify-between w-3/5 float-end place-self-end">
                   <Typography.Text className="uppercase text-NumerisGrey2 text-sm font-NeueHaasDisplayLight font-normal tracking-wider">
                     Subtotal
@@ -265,7 +270,7 @@ const InvoiceDetails = (): JSX.Element => {
                     $167,430.00
                   </Typography.Text>
                 </div>
-                <div className="flex flex-row items-center justify-between w-3/5 float-end place-self-end">
+                <div className="flex flex-row items-center justify-between w-3/5 float-end place-self-end pt-4">
                   <Typography.Text className="text-NumerisDarkGrey font-medium font-NeueHaasDisplayMedium text-lg tracking-wider uppercase">
                     Total amount due
                   </Typography.Text>
