@@ -17,7 +17,7 @@ const InvoiceDetails = (): JSX.Element => {
   return (
     <div className="pt-6 w-full flex flex-col space-y-6">
       <div className="rounded-3xl border border-NumerisGreyBorder py-7 w-11/12 flex flex-row px-8">
-        <Flex align="center" gap={10}>
+        <Flex align="center" gap={14}>
           <Typography.Text className="uppercase text-NumerisGrey3 font-normal font-NeueHaasDisplayLight text-xs">
             Reminders
           </Typography.Text>
@@ -183,17 +183,17 @@ const InvoiceDetails = (): JSX.Element => {
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      10
+                      6
                     </Typography.Text>
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $1,500
+                      $1,110,500
                     </Typography.Text>
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $15,000.00
+                      $6,663,000.00
                     </Typography.Text>
                   </div>
                 </div>
@@ -209,17 +209,17 @@ const InvoiceDetails = (): JSX.Element => {
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      10
+                      7
                     </Typography.Text>
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $1,500
+                      $2,750
                     </Typography.Text>
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $15,000.00
+                      $19,250.00
                     </Typography.Text>
                   </div>
                 </div>
@@ -232,17 +232,17 @@ const InvoiceDetails = (): JSX.Element => {
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      10
+                      6
                     </Typography.Text>
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $1,500
+                      $1,110,500
                     </Typography.Text>
                   </div>
                   <div>
                     <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
-                      $15,000.00
+                      $6,663,000.00
                     </Typography.Text>
                   </div>
                 </div>
