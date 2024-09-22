@@ -20,7 +20,7 @@ const items: MenuProps["items"] = [
   {
     key: "1",
     label: (
-      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-widest py-8 mb-8">
+      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-wider py-8 mb-8">
         Duplicate invoice
       </Typography.Text>
     ),
@@ -28,7 +28,7 @@ const items: MenuProps["items"] = [
   {
     key: "2",
     label: (
-      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-widest py-8">
+      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-wider py-8">
         get sharable link
       </Typography.Text>
     ),
