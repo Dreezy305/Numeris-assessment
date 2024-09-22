@@ -9,7 +9,11 @@ import {
 } from "../components/icons/icons";
 type MenuItem = Required<MenuProps>["items"][number];
 
-const itemStyle: React.CSSProperties = { marginBottom: "14px", height: "52px" };
+const itemStyle: React.CSSProperties = {
+  marginBottom: "14px",
+  height: "52px",
+  fontSize: "14px",
+};
 
 // eslint-disable-next-line react-refresh/only-export-components
 const ItemLabel = ({ text }: { text: string }): JSX.Element => {
