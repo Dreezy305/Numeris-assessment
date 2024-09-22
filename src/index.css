@@ -86,3 +86,8 @@
 .card_border {
   border-radius: 40px !important;
 }
+
+.liner::after {
+  content: "";
+  border: 1px solid red;
+}

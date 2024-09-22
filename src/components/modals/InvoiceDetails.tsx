@@ -1,21 +1,12 @@
-import { Avatar, Card, Col, Divider, Flex, Row, Typography } from "antd";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { Avatar, Card, Col, Divider, Flex, Row, Steps, Typography } from "antd";
 import "react-vertical-timeline-component/style.min.css";
 import AvatarIcon from "../../assets/image10.png";
-// import Icon13 from "../../assets/image13.png";
-import { CheckIcon, IrisIcon } from "../icons/icons";
+import Icon13 from "../../assets/image13.png";
+import { CheckIcon } from "../icons/icons";
 
 const InvoiceDetails = (): JSX.Element => {
-  const WorkIcon = () => (
-    <>
-      <IrisIcon />
-    </>
-  );
   return (
-    <div className="pt-6 w-full flex flex-col space-y-6">
+    <div className="pt-6 w-full flex flex-col space-y-9">
       <div className="rounded-3xl border border-NumerisGreyBorder py-7 w-11/12 flex flex-row px-8">
         <Flex align="center" gap={14}>
           <Typography.Text className="uppercase text-NumerisGrey3 font-normal font-NeueHaasDisplayLight text-xs">
@@ -350,49 +341,172 @@ const InvoiceDetails = (): JSX.Element => {
         </Card>
 
         <div className="w-[35%] self-stretch justify-start">
-          <VerticalTimeline className="w-full">
-            <VerticalTimelineElement
-              className="vertical-timeline-element"
-              contentStyle={{}}
-              contentArrowStyle={{
-                borderLeft: "",
-              }}
-              iconStyle={{ background: "", color: "" }}
-              icon={<WorkIcon />}
-              position="right"
-            >
-              <h3 className="vertical-timeline-element-title"></h3>
-              <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-              <p></p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              date="2010 - 2011"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-              icon={<WorkIcon />}
-            >
-              <h3 className="vertical-timeline-element-title">Art Director</h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                San Francisco, CA
-              </h4>
-              <p>
-                Creative Direction, User Experience, Visual Design, SEO, Online
-                Marketing
-              </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              date="2008 - 2010"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-              icon={<WorkIcon />}
-            >
-              <h3 className="vertical-timeline-element-title">Web Designer</h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                Los Angeles, CA
-              </h4>
-              <p>User Experience, Visual Design</p>
-            </VerticalTimelineElement>
-          </VerticalTimeline>
+          <Flex vertical gap={16}>
+            <Typography.Text className="font-NeueHaasDisplayMedium font-medium text-xl text-NumerisDark">
+              Invoice Activity
+            </Typography.Text>
+
+            {/* <Flex vertical gap={38} className="mt-3">
+              {[1, 2, 3, 4, 5].map((i) => {
+                return (
+                  <Flex align="start" gap={14} key={i} className="liner">
+                    <Avatar
+                      src={Icon13}
+                      size={"large"}
+                      shape="circle"
+                      style={{ width: "48px", height: "48px" }}
+                    />
+                    <div className="flex flex-col space-y-4">
+                      <div className="flex flex-col">
+                        <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
+                          You
+                        </Typography.Text>
+                        <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
+                          Today, 12:20 PM
+                        </Typography.Text>
+                      </div>
+                      <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                        <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
+                          Created invoice
+                        </span>
+                        <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
+                          00239434/Olaniyi Ojo Adewale
+                        </span>
+                      </div>
+                    </div>
+                  </Flex>
+                );
+              })}
+            </Flex> */}
+
+            <Steps
+              current={undefined}
+              onChange={undefined}
+              direction="vertical"
+              items={[
+                {
+                  title: (
+                    <div className="flex flex-col">
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
+                        You
+                      </Typography.Text>
+                      <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
+                        Today, 12:05 PM
+                      </Typography.Text>
+                    </div>
+                  ),
+                  icon: <Avatar src={Icon13} />,
+                  style: { minHeight: 100 },
+                  description: (
+                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                      <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
+                        Created invoice
+                      </span>
+                      <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
+                        00239434/Olaniyi Ojo Adewale
+                      </span>
+                    </div>
+                  ),
+                },
+                {
+                  title: (
+                    <div className="flex flex-col">
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
+                        You
+                      </Typography.Text>
+                      <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
+                        Today, 12:05 PM
+                      </Typography.Text>
+                    </div>
+                  ),
+                  icon: <Avatar src={Icon13} />,
+                  style: { minHeight: 100 },
+                  description: (
+                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                      <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
+                        Created invoice
+                      </span>
+                      <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
+                        00239434/Olaniyi Ojo Adewale
+                      </span>
+                    </div>
+                  ),
+                },
+                {
+                  title: (
+                    <div className="flex flex-col">
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
+                        You
+                      </Typography.Text>
+                      <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
+                        Today, 12:05 PM
+                      </Typography.Text>
+                    </div>
+                  ),
+                  icon: <Avatar src={Icon13} />,
+                  style: { minHeight: 100 },
+                  description: (
+                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                      <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
+                        Created invoice
+                      </span>
+                      <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
+                        00239434/Olaniyi Ojo Adewale
+                      </span>
+                    </div>
+                  ),
+                },
+                {
+                  title: (
+                    <div className="flex flex-col">
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
+                        You
+                      </Typography.Text>
+                      <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
+                        Today, 12:05 PM
+                      </Typography.Text>
+                    </div>
+                  ),
+                  icon: <Avatar src={Icon13} />,
+                  style: { minHeight: 100 },
+                  description: (
+                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                      <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
+                        Created invoice
+                      </span>
+                      <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
+                        00239434/Olaniyi Ojo Adewale
+                      </span>
+                    </div>
+                  ),
+                },
+                {
+                  title: (
+                    <div className="flex flex-col">
+                      <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
+                        You
+                      </Typography.Text>
+                      <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
+                        Today, 12:05 PM
+                      </Typography.Text>
+                    </div>
+                  ),
+                  icon: <Avatar src={Icon13} />,
+                  style: { minHeight: 100 },
+                  description: (
+                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                      <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
+                        Created invoice
+                      </span>
+                      <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
+                        00239434/Olaniyi Ojo Adewale
+                      </span>
+                    </div>
+                  ),
+                },
+              ]}
+            />
+          </Flex>
         </div>
       </div>
     </div>
