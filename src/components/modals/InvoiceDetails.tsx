@@ -1,8 +1,19 @@
 import { Avatar, Card, Divider, Flex, Typography } from "antd";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import AvatarIcon from "../../assets/image10.png";
-import { CheckIcon } from "../icons/icons";
+// import Icon13 from "../../assets/image13.png";
+import { CheckIcon, IrisIcon } from "../icons/icons";
 
 const InvoiceDetails = (): JSX.Element => {
+  const WorkIcon = () => (
+    <>
+      <IrisIcon />
+    </>
+  );
   return (
     <div className="pt-6 w-full flex flex-col space-y-6">
       <div className="rounded-3xl border border-NumerisGreyBorder py-7 w-11/12 flex flex-row px-8">
@@ -134,7 +145,126 @@ const InvoiceDetails = (): JSX.Element => {
               </Typography.Text>
             </Divider>
 
-            <div className="rounded-3xl border px-4 py-5 flex flex-col space-y-3">
+            {/* ITEMS RECEIPT */}
+            <Flex vertical gap={24}>
+              <div className="w-full flex flex-col space-y-8 mb-6">
+                <div className="flex flex-row justify-between items-start">
+                  <div className="flex flex-col w-2/5">
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-NumerisDark text-base">
+                      Email Marketing
+                    </Typography.Text>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-xs text-NumerisGrey3">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      10
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      $1,500
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      $15,000.00
+                    </Typography.Text>
+                  </div>
+                </div>
+
+                <div className="flex flex-row justify-between items-start">
+                  <div className="flex flex-col space-y-2 w-2/5">
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-NumerisDark text-base">
+                      Video looping effect
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      10
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      $1,500
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      $15,000.00
+                    </Typography.Text>
+                  </div>
+                </div>
+
+                <div className="flex flex-row justify-between items-start">
+                  <div className="flex flex-col w-2/5">
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-NumerisDark text-base">
+                      Graphic design for emails
+                    </Typography.Text>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-xs text-NumerisGrey3">
+                      Tsit voluptatem accusantium
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      10
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      $1,500
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      $15,000.00
+                    </Typography.Text>
+                  </div>
+                </div>
+
+                <div className="flex flex-row justify-between items-start">
+                  <div className="flex flex-col w-2/5">
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-NumerisDark text-base">
+                      Video looping effect
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      10
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      $1,500
+                    </Typography.Text>
+                  </div>
+                  <div>
+                    <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisDark tracking-wider uppercase">
+                      $15,000.00
+                    </Typography.Text>
+                  </div>
+                </div>
+              </div>
+
+              <Flex vertical gap={8}>
+                <div className="flex flex-row items-start justify-between w-1/2 float-end place-self-end">
+                  <Typography.Text>Subtotal</Typography.Text>
+                  <Typography.Text>$6,697,200.00</Typography.Text>
+                </div>
+                <div className="flex flex-row items-start justify-between w-1/2 float-end place-self-end">
+                  <Typography.Text>Discount (2.5%)</Typography.Text>
+                  <Typography.Text>$167,430.00</Typography.Text>
+                </div>
+                <div className="flex flex-row items-start justify-between w-1/2 float-end place-self-end">
+                  <Typography.Text>Total amount due</Typography.Text>
+                  <Typography.Text>$6,529,770.00</Typography.Text>
+                </div>
+              </Flex>
+            </Flex>
+
+            <div className="rounded-3xl border px-4 py-5 flex flex-col space-y-3 mt-8">
               <Typography.Text className="uppercase tracking-widest text-NumerisGrey font-NeueHaasDisplayMedium font-medium text-xs place-self-start">
                 Payment information
               </Typography.Text>
@@ -202,7 +332,51 @@ const InvoiceDetails = (): JSX.Element => {
           </Flex>
         </Card>
 
-        <div className="w-[35%] self-stretch"></div>
+        <div className="w-[35%] self-stretch justify-start">
+          <VerticalTimeline className="w-full">
+            <VerticalTimelineElement
+              className="vertical-timeline-element"
+              contentStyle={{}}
+              contentArrowStyle={{
+                borderLeft: "",
+              }}
+              iconStyle={{ background: "", color: "" }}
+              icon={<WorkIcon />}
+              position="right"
+            >
+              <h3 className="vertical-timeline-element-title"></h3>
+              <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+              <p></p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2010 - 2011"
+              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              icon={<WorkIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">Art Director</h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                San Francisco, CA
+              </h4>
+              <p>
+                Creative Direction, User Experience, Visual Design, SEO, Online
+                Marketing
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2008 - 2010"
+              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              icon={<WorkIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">Web Designer</h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Los Angeles, CA
+              </h4>
+              <p>User Experience, Visual Design</p>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+        </div>
       </div>
     </div>
   );
