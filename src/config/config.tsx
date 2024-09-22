@@ -70,7 +70,7 @@ export const config: ThemeConfig = {
       fontFamily: "NeueHaasDisplayMedium",
       itemColor: "#697598",
       itemSelectedBg: "#FFF",
-      itemSelectedColor: "#697598",
+      itemSelectedColor: "#4F4F4F",
       itemBorderRadius: 100,
       itemHoverBg: "#697598",
       itemHoverColor: "#FFFFFF",

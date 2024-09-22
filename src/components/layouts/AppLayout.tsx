@@ -21,10 +21,10 @@ const AppLayout: React.FC = () => {
         breakpoint="lg"
         collapsedWidth="0"
         onBreakpoint={(broken) => {
-          console.log(broken);
+          return broken;
         }}
         onCollapse={(collapsed, type) => {
-          console.log(collapsed, type);
+          return { collapsed, type };
         }}
         style={{
           overflow: "auto",
@@ -49,7 +49,7 @@ const AppLayout: React.FC = () => {
           mode="inline"
           defaultSelectedKeys={["4"]}
           items={Items}
-          className="border_end"
+          className="custom-menu"
         />
       </Sider>
       <Layout

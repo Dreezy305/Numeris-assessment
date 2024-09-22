@@ -17,7 +17,7 @@ const ModalTitle = () => {
           PARTIAL PAYMENT
         </Typography.Text>
       </Flex>
-      <Flex gap={12} className="py-3 pb-8 place-self-start">
+      <Flex gap={16} className="py-3 pb-8 place-self-start">
         <Button
           type="default"
           shape="round"
