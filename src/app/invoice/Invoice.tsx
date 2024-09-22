@@ -1,42 +1,16 @@
-import {
-  Avatar,
-  Button,
-  Card,
-  Dropdown,
-  Flex,
-  MenuProps,
-  Space,
-  Typography,
-} from "antd";
+import { Avatar, Button, Card, Flex, Space, Typography } from "antd";
 import AvatarIcon from "../../assets/image13.png";
 import { MenuIcon } from "../../components/icons/icons";
 import InvoiceDetails from "../../components/modals/InvoiceDetails";
+import ModalTitle from "../../components/modals/ModalTitle";
 import { useModal } from "../../contexts/ModalContext";
 import { invoice_actions, invoice_data } from "../../utils/data";
 import { splitAmount } from "../../utils/helper";
 import { IInvoice, IInvoiceActions } from "../../utils/types";
 
-const items: MenuProps["items"] = [
-  {
-    key: "1",
-    label: (
-      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-wider py-8 mb-8">
-        Duplicate invoice
-      </Typography.Text>
-    ),
-  },
-  {
-    key: "2",
-    label: (
-      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-wider py-8">
-        get sharable link
-      </Typography.Text>
-    ),
-  },
-];
-
 const Invoice = (): JSX.Element => {
   const { openModal } = useModal();
+
   return (
     <Flex vertical gap={34} style={{ width: "100%" }} className="pb-8 mb-5">
       <Flex
@@ -154,68 +128,7 @@ const Invoice = (): JSX.Element => {
                   size={"large"}
                   className="uppercase h-16 w-52 cursor-pointer bg-white border border-NumerisGreyBorder text-NumerisBlue font-NeueHaasDisplayMedium text-sm tracking-widest"
                   onClick={() =>
-                    openModal(
-                      <InvoiceDetails />,
-                      <Flex
-                        align="flex-start"
-                        justify="space-between"
-                        className="h-28 pb-8"
-                      >
-                        <Flex vertical gap={20} className="place-content-start">
-                          <div className="flex flex-col space-y-1">
-                            <Typography.Text className="font-bold font-NeueHaasDisplayBold text-NumerisDark text-3xl">
-                              Invoice - 1023494 - 2304
-                            </Typography.Text>
-                            <Typography.Text className="font-normal font-NeueHaasDisplayLight text-base text-NumerisGrey">
-                              View the details and activity of this invoice
-                            </Typography.Text>
-                          </div>
-                          <Typography.Text className="bg-NumerisPryBg border border- NumerisPryBorder text-NumerisBlue font-NeueHaasDisplayMedium font-medium text-xs uppercase h-9 flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest place-self-start px-8 whitespace-nowrap">
-                            PARTIAL PAYMENT
-                          </Typography.Text>
-                        </Flex>
-                        <Flex gap={12} className="py-3 pb-8 place-self-start">
-                          <Button
-                            type="default"
-                            shape="round"
-                            size={"large"}
-                            className="uppercase h-16 w-52 cursor-pointer bg-white border border-NumerisGreyBorder text-NumerisBlue font-NeueHaasDisplayMedium text-sm tracking-widest"
-                          >
-                            Download as pdf
-                          </Button>
-                          <Button
-                            type="primary"
-                            shape="round"
-                            size={"large"}
-                            className="uppercase h-16 w-52 cursor-pointer bg-NumerisBlue font-NeueHaasDisplayMedium text-sm text-white"
-                          >
-                            Send invoice
-                          </Button>
-                          <Dropdown
-                            menu={{ items }}
-                            placement="bottomRight"
-                            trigger={["click", "hover"]}
-                            overlayStyle={{
-                              width: "260px",
-                              borderRadius: "24px !important",
-                              padding: 16,
-                            }}
-                            overlayClassName="custom-dropdown"
-                          >
-                            <Button
-                              type="default"
-                              shape="round"
-                              size={"large"}
-                              className="uppercase h-16 cursor-pointer bg-white border border-NumerisGreyBorder text-NumerisGrey font-NeueHaasDisplayMedium text-sm"
-                            >
-                              More
-                            </Button>
-                          </Dropdown>
-                        </Flex>
-                      </Flex>,
-                      1334,
-                      false
-                    )
+                    openModal(<InvoiceDetails />, <ModalTitle />, 1334, false)
                   }
                 >
                   VIEW ALL INVOICES

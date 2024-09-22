@@ -81,10 +81,7 @@ const AppLayout: React.FC = () => {
           </Flex>
         </Header>
         <Content style={{ margin: "24px 16px 0" }} className="px-8">
-          <div
-          // className="pb-b mb-5 overflow-y-scroll"
-          // style={{ background: "#F5F6FA" }}
-          >
+          <div>
             <Outlet />
           </div>
         </Content>
