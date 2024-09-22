@@ -91,3 +91,8 @@
   content: "";
   border: 1px solid red;
 }
+/*     inset-inline-start: 23px; */
+
+.ant-steps-item-tail {
+  inset-inline-start: 23px !important;
+}

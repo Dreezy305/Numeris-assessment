@@ -4,6 +4,19 @@ import AvatarIcon from "../../assets/image10.png";
 import Icon13 from "../../assets/image13.png";
 import { CheckIcon } from "../icons/icons";
 
+const stepitemStyle: React.CSSProperties = {
+  minHeight: 150,
+};
+
+const StepAvatar = () => (
+  <Avatar
+    src={Icon13}
+    style={{ width: "48px", height: "48px" }}
+    size={"large"}
+    shape="circle"
+  />
+);
+
 const InvoiceDetails = (): JSX.Element => {
   return (
     <div className="pt-6 w-full flex flex-col space-y-9">
@@ -386,7 +399,7 @@ const InvoiceDetails = (): JSX.Element => {
               items={[
                 {
                   title: (
-                    <div className="flex flex-col">
+                    <div className="flex flex-col ps-3 pb-3">
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
                         You
                       </Typography.Text>
@@ -395,10 +408,10 @@ const InvoiceDetails = (): JSX.Element => {
                       </Typography.Text>
                     </div>
                   ),
-                  icon: <Avatar src={Icon13} />,
-                  style: { minHeight: 100 },
+                  icon: <StepAvatar />,
+                  style: { ...stepitemStyle },
                   description: (
-                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1 ms-3">
                       <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
                         Created invoice
                       </span>
@@ -410,7 +423,7 @@ const InvoiceDetails = (): JSX.Element => {
                 },
                 {
                   title: (
-                    <div className="flex flex-col">
+                    <div className="flex flex-col ps-3 pb-3">
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
                         You
                       </Typography.Text>
@@ -419,70 +432,70 @@ const InvoiceDetails = (): JSX.Element => {
                       </Typography.Text>
                     </div>
                   ),
-                  icon: <Avatar src={Icon13} />,
-                  style: { minHeight: 100 },
+                  icon: <StepAvatar />,
+                  style: { ...stepitemStyle },
                   description: (
-                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                    <span className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1 ms-3 mb-8">
                       <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
-                        Created invoice
+                        Sent invoice
                       </span>
                       <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
-                        00239434/Olaniyi Ojo Adewale
+                        00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale
                       </span>
-                    </div>
+                    </span>
                   ),
                 },
                 {
                   title: (
-                    <div className="flex flex-col">
+                    <div className="flex flex-col ps-3 pb-3">
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
-                        You
+                        Payment Confirmed
                       </Typography.Text>
                       <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
                         Today, 12:05 PM
                       </Typography.Text>
                     </div>
                   ),
-                  icon: <Avatar src={Icon13} />,
-                  style: { minHeight: 100 },
+                  icon: <StepAvatar />,
+                  style: { ...stepitemStyle },
                   description: (
-                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                    <span className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1 ms-3">
                       <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
-                        Created invoice
+                        You manually confirmed a partial payment of
                       </span>
                       <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
-                        00239434/Olaniyi Ojo Adewale
+                        $503,000.00
                       </span>
-                    </div>
+                    </span>
                   ),
                 },
                 {
                   title: (
-                    <div className="flex flex-col">
+                    <div className="flex flex-col ps-3 pb-3">
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
-                        You
+                        Payment Confirmed
                       </Typography.Text>
                       <Typography.Text className="font-normal text-NumerisGrey font-NeueHaasDisplayLight text-sm">
                         Today, 12:05 PM
                       </Typography.Text>
                     </div>
                   ),
-                  icon: <Avatar src={Icon13} />,
-                  style: { minHeight: 100 },
+                  icon: <StepAvatar />,
+                  style: { ...stepitemStyle },
                   description: (
-                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                    <span className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1 ms-3">
                       <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
-                        Created invoice
+                        You manually confirmed a full payment of
                       </span>
                       <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
-                        00239434/Olaniyi Ojo Adewale
+                        $6,000,000.00
                       </span>
-                    </div>
+                    </span>
                   ),
                 },
                 {
                   title: (
-                    <div className="flex flex-col">
+                    <div className="flex flex-col ps-3 pb-3">
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-lg text-black">
                         You
                       </Typography.Text>
@@ -491,20 +504,21 @@ const InvoiceDetails = (): JSX.Element => {
                       </Typography.Text>
                     </div>
                   ),
-                  icon: <Avatar src={Icon13} />,
-                  style: { minHeight: 100 },
+                  icon: <StepAvatar />,
+                  style: { ...stepitemStyle },
                   description: (
-                    <div className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1">
+                    <span className="px-3 py-4 rounded-2xl bg-NumerisLightGrey flex flex-wrap items-center space-x-1 ms-3">
                       <span className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-sm">
-                        Created invoice
+                        Sent invoice
                       </span>
                       <span className="text-NumerisDarkGrey font-normal font-NeueHaasDisplayMedium text-sm">
-                        00239434/Olaniyi Ojo Adewale
+                        00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale
                       </span>
-                    </div>
+                    </span>
                   ),
                 },
               ]}
+              className="tail"
             />
           </Flex>
         </div>
