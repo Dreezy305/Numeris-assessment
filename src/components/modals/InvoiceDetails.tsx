@@ -190,6 +190,15 @@ const InvoiceDetails = (): JSX.Element => {
                 </div>
               </div>
             </div>
+
+            <div className="rounded-3xl border px-4 py-5 flex flex-col space-y-1 bg-NumerisLightGrey">
+              <Typography.Text className="text-NumerisGrey2 font-normal font-NeueHaasDisplayLight text-sm">
+                NOTE
+              </Typography.Text>
+              <Typography.Text className="text-NumerisGrey3 font-normal font-NeueHaasDisplayLight text-base tracking-wider">
+                Thank you for your patronage
+              </Typography.Text>
+            </div>
           </Flex>
         </Card>
 

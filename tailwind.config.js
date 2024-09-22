@@ -20,6 +20,7 @@ export default {
         NumerisYellow: "#F8E39B",
         NumerisLightGrey: "#F6F8FA",
         NumerisGrey3: "#666F77",
+        NumerisGrey2: "#B7BDCF",
         NumerisGreyBorder: "#E3E6EF",
         NumerisBadgeSuccess: "#12904333",
         NumerisTextSuccess: "#129043",
