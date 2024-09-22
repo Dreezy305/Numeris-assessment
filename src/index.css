@@ -121,3 +121,14 @@
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
+.custom-dropdown .ant-dropdown-menu {
+  border-radius: 24px !important; /* Customize border radius */
+  padding: 16px !important;
+  border: 1px solid #e3e6ef !important;
+  padding-bottom: 12px !important;
+}
+
+.custom-dropdown .ant-dropdown-menu-item {
+  margin-bottom: 4px !important; /* Optional: Add space between items */
+}

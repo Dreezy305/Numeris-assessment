@@ -20,7 +20,7 @@ const items: MenuProps["items"] = [
   {
     key: "1",
     label: (
-      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-widest py-8">
+      <Typography.Text className="font-medium font-NeueHaasDisplayMedium uppercase text-sm text-NumerisGrey tracking-widest py-8 mb-8">
         Duplicate invoice
       </Typography.Text>
     ),
@@ -200,7 +200,7 @@ const Invoice = (): JSX.Element => {
                               borderRadius: "24px !important",
                               padding: 16,
                             }}
-                            
+                            overlayClassName="custom-dropdown"
                           >
                             <Button
                               type="default"
