@@ -38,7 +38,6 @@ const InvoiceDetails = (): JSX.Element => {
           title={null}
         >
           <Flex vertical gap={24}>
-            
             <div className="bg-NumerisPink px-10 py-8 invoice_activities">
               <div className="flex flex-col space-y-12">
                 <div className="flex flex-row items-start justify-between">
@@ -58,7 +57,7 @@ const InvoiceDetails = (): JSX.Element => {
                         size={"large"}
                         src={AvatarIcon}
                       />
-                      <div className="flex flex-col space-y-1">
+                      <div className="flex flex-col space-y-2">
                         <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base tracking-wider">
                           Fabulous Enterprise
                         </Typography.Text>
@@ -79,17 +78,17 @@ const InvoiceDetails = (): JSX.Element => {
                     <Typography.Text className="uppercase tracking-wider text-NumerisGrey font-NeueHaasDisplayMedium font-medium text-xs place-self-end">
                       Customer
                     </Typography.Text>
-                    <Flex vertical gap={1}>
+                    <Flex vertical gap={6}>
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base place-self-end tracking-wider">
                         Olaniyi Ojo Adewale
                       </Typography.Text>
-                      <Typography.Text className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-xs place-self-end tracking-wider">
+                      <Typography.Text className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-xs place-self-start tracking-wider">
                         +386 989 271 3115
                       </Typography.Text>
+                      <Typography.Text className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-xs place-self-start tracking-wider">
+                        info@fabulousenterise.co
+                      </Typography.Text>
                     </Flex>
-                    <Typography.Text className="text-NumerisGrey font-normal font-NeueHaasDisplayLight text-xs place-self-end tracking-wider">
-                      info@fabulousenterise.co
-                    </Typography.Text>
                   </div>
                 </div>
 
