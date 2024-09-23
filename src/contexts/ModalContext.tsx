@@ -1,4 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
+import { CloseOutlined } from "@ant-design/icons";
 import { Modal } from "antd";
 import React, {
   createContext,
@@ -158,9 +159,9 @@ export const ModalProvider: React.FC<ModalProviderProps> = ({ children }) => {
         //   </div>
         // }
       >
-        {/* <div className="bg-white custom-close-btn" onClick={closeModal}>
+        <div className="bg-white custom-close-btn" onClick={closeModal}>
           <CloseOutlined className="text-2xl" />
-        </div> */}
+        </div>
         <>{modalContent}</>
       </Modal>
     </ModalContext.Provider>
