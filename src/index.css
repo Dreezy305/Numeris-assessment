@@ -201,9 +201,11 @@
   width: 50px !important;
   height: 50px !important;
   cursor: pointer !important;
+  color: #292d32 !important;
 }
 
 .ant-modal-close-x {
   font-size: 22px !important;
   cursor: pointer !important;
+  color: #292d32 !important;
 }
