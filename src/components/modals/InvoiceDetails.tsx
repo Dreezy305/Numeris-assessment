@@ -1,14 +1,16 @@
 import { Avatar, Card, Col, Divider, Flex, Row, Typography } from "antd";
 import "react-vertical-timeline-component/style.min.css";
 import AvatarIcon from "../../assets/image10.png";
+import useResize from "../../hooks/resize.hooks";
 import { CheckIcon } from "../icons/icons";
 import ModalStepper from "./ModalStepper";
 
 const InvoiceDetails = (): JSX.Element => {
+  const { size } = useResize();
   return (
-    <div className="pt-6 w-full flex flex-col space-y-9">
-      <div className="rounded-3xl border border-NumerisGreyBorder py-7 w-11/12 flex flex-row px-8">
-        <Flex align="center" gap={14}>
+    <div className="pt-6 w-full flex flex-col space-y-9 mt-40 md:mt-0 lg:mt-0 xl:mt-0">
+      <div className="rounded-3xl border border-NumerisGreyBorder py-7 lg:w-full xl:w-11/12 flex flex-row px-8">
+        <Flex wrap={size[0] <= 1024} align="center" gap={14}>
           <Typography.Text className="uppercase text-NumerisGrey3 font-normal font-NeueHaasDisplayLight text-xs">
             Reminders
           </Typography.Text>
@@ -30,9 +32,13 @@ const InvoiceDetails = (): JSX.Element => {
         </Flex>
       </div>
 
-      <div className="flex flex-row items-start space-x-8">
-        <Card className="w-[65%] px-2 py-2 border card_border" title={null}>
+      <div className="flex flex-col space-y-8 lg:flex lg:flex-row lg:items-start lg:space-x-8 xl:flex xl:flex-row xl:items-start xl:space-x-8">
+        <Card
+          className="lg:w-3/4 xl:w-[65%] px-2 py-2 border card_border"
+          title={null}
+        >
           <Flex vertical gap={24}>
+            
             <div className="bg-NumerisPink px-10 py-8 invoice_activities">
               <div className="flex flex-col space-y-12">
                 <div className="flex flex-row items-start justify-between">
@@ -245,7 +251,7 @@ const InvoiceDetails = (): JSX.Element => {
               </Row>
 
               <Flex vertical gap={18} className="mt-5">
-                <div className="flex flex-row items-start justify-between w-3/5 float-end place-self-end">
+                <div className="flex flex-row items-start justify-between md:w-3/4 lg:w-3/4 xl:w-3/5 float-end place-self-end">
                   <Typography.Text className="uppercase text-NumerisGrey2 text-sm font-NeueHaasDisplayLight font-normal tracking-wider">
                     Subtotal
                   </Typography.Text>
@@ -253,7 +259,7 @@ const InvoiceDetails = (): JSX.Element => {
                     $6,697,200.00
                   </Typography.Text>
                 </div>
-                <div className="flex flex-row items-start justify-between w-3/5 float-end place-self-end">
+                <div className="flex flex-row items-start justify-between md:w-3/4 lg:w-3/4 xl:w-3/5 float-end place-self-end">
                   <Typography.Text className="uppercase text-NumerisGrey2 text-sm font-NeueHaasDisplayLight font-normal tracking-wider">
                     Discount (2.5%)
                   </Typography.Text>
@@ -261,7 +267,7 @@ const InvoiceDetails = (): JSX.Element => {
                     $167,430.00
                   </Typography.Text>
                 </div>
-                <div className="flex flex-row items-center justify-between w-3/5 float-end place-self-end pt-4">
+                <div className="flex flex-row items-center justify-between md:w-3/4 lg:w-3/4 xl:w-3/5 float-end place-self-end pt-4">
                   <Typography.Text className="text-NumerisDarkGrey font-medium font-NeueHaasDisplayMedium text-lg tracking-wider uppercase">
                     Total amount due
                   </Typography.Text>
@@ -340,7 +346,7 @@ const InvoiceDetails = (): JSX.Element => {
           </Flex>
         </Card>
 
-        <div className="w-[35%] self-stretch justify-start">
+        <div className="xl:w-[35%] self-stretch justify-start">
           <Flex vertical gap={16}>
             <Typography.Text className="font-NeueHaasDisplayMedium font-medium text-xl text-NumerisDark">
               Invoice Activity

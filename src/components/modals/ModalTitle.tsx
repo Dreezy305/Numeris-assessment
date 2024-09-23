@@ -1,10 +1,17 @@
 import { Button, Dropdown, Flex, Typography } from "antd";
+import useResize from "../../hooks/resize.hooks";
 import { items } from "../../utils/menuitems";
 
 const ModalTitle = () => {
+  const { size } = useResize();
   return (
-    <Flex align="flex-start" justify="space-between" className="h-28 pb-8">
-      <Flex vertical gap={20} className="place-content-start">
+    <Flex
+      wrap
+      align="flex-start"
+      justify="space-between"
+      className={`${size[0] < 768 ? "pb-12 mb-12 h-44" : "h-28 pb-8"} `}
+    >
+      <Flex vertical={size[0] > 768} gap={20} className="place-content-start">
         <div className="flex flex-col space-y-1">
           <Typography.Text className="font-bold font-NeueHaasDisplayBold text-NumerisDark text-3xl">
             Invoice - 1023494 - 2304
