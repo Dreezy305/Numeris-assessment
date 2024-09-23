@@ -197,7 +197,7 @@ const Invoice = (): JSX.Element => {
                       <Typography.Text className="font-medium font-NeueHaasDisplayMedium text-NumerisDarkGrey text-base md:place-self-end xl:place-self-end">
                         $1,311,750.12
                       </Typography.Text>
-                      <Typography.Text className="bg-NumerisOverDueBg border-NumerisOverDue text-NumerisOverDueText font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8 flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest md:place-self-end xl:place-self-end md:px-5 xl:px-8 border">
+                      <Typography.Text className="bg-NumerisOverDueBg border-NumerisOverDue text-NumerisOverDueText font-NeueHaasDisplayMedium font-medium text-xs uppercase h-8 flex flex-row items-center justify-center rounded-2xl text-right float-end tracking-widest md:place-self-end lg:place-self-end xl:place-self-end md:px-5 xl:px-8 border">
                         OVERDUE
                       </Typography.Text>
                     </Flex>

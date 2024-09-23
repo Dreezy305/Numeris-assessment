@@ -9,7 +9,7 @@ const InvoiceDetails = (): JSX.Element => {
   const { size } = useResize();
   return (
     <div className="pt-6 w-full flex flex-col space-y-9 mt-40 md:mt-0 lg:mt-0 xl:mt-0">
-      <div className="rounded-3xl border border-NumerisGreyBorder py-7 lg:w-full xl:w-11/12 flex flex-row px-8">
+      <div className="rounded-3xl border border-NumerisGreyBorder py-7 md:w-full lg:w-full xl:w-11/12 md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row md:px-3 lg:px-6 xl:px-8">
         <Flex wrap={size[0] <= 1024} align="center" gap={14}>
           <Typography.Text className="uppercase text-NumerisGrey3 font-normal font-NeueHaasDisplayLight text-xs">
             Reminders

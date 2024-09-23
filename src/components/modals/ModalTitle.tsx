@@ -10,6 +10,7 @@ const ModalTitle = () => {
       align="flex-start"
       justify="space-between"
       className={`${size[0] < 768 ? "pb-12 mb-12 h-44" : "h-28 pb-8"} `}
+      style={{ height: size[0] <= 820 ? "200px" : "" }}
     >
       <Flex vertical={size[0] > 768} gap={20} className="place-content-start">
         <div className="flex flex-col space-y-1">
