@@ -145,6 +145,12 @@
 .custom-menu .ant-menu-item .ant-menu-light .ant-menu-root .ant-menu-inline {
   border-inline-end: none !important;
 }
+.ant-menu-item .ant-menu-inline .ant-menu-root {
+  border-inline-end: none !important;
+}
+.ant-menu-root {
+  border-inline-end: none !important;
+}
 
 .custom-close-btn {
   position: absolute;
